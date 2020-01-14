@@ -5,7 +5,7 @@ view: gcp_billing_export {
         *,
         GENERATE_UUID() as pk
       FROM
-        gcp_logs.gcp_billing_export_v1_01DBF1_FA0AFC_1CB6EC
+        billing.gcp_billing_export_v1_01DBF1_FA0AFC_1CB6EC
       WHERE
         {% condition date_filter %} _PARTITIONTIME {% endcondition %} ;;
   }
